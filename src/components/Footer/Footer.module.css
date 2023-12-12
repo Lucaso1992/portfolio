@@ -3,7 +3,6 @@
     min-height: 59px;
     background-color: #010409;
     box-shadow: 0 0 6px white;
-    /* position: absolute; */
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -14,4 +13,10 @@
     color: rgba(255, 255, 255, 0.397);
     margin-bottom: 0;
     font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+    .footer_container{
+        position: relative;
+    }
 }

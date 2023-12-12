@@ -3,17 +3,18 @@
     flex-direction: column;
     width: 80%;
     color: whitesmoke;
+    align-self: center;
     margin-top: auto;
     margin-bottom: auto;
-    align-self: center;
 }
 
 .img_container{
-    min-height: 14rem;
-    min-width: 14rem;
-    max-height: 14rem;
-    max-width: 14rem;
+    min-height: 11rem;
+    min-width: 11rem;
+    max-height: 11rem;
+    max-width: 11rem;
     align-self: center;
+    margin-top: 1rem;
 }
 
 .remarked{
@@ -30,6 +31,7 @@
 
 .intro_textito{
     font-size: 18px;
+    margin-top: 1.5rem;
 }
 
 .intro_text_container{
@@ -45,6 +47,8 @@
     display: flex;
     flex-direction: row;
     width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .img_container{
@@ -62,5 +66,12 @@
 
 .welcome_message{
     font-size: 38px;
+}
+
+.img_container{
+    min-height: 14rem;
+    min-width: 14rem;
+    max-height: 14rem;
+    max-width: 14rem;
 }
   }
