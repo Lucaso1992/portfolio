@@ -14,7 +14,7 @@
     max-height: 11rem;
     max-width: 11rem;
     align-self: center;
-    margin-top: 1rem;
+    height: 11rem;
 }
 
 .remarked{
@@ -25,22 +25,26 @@
 .welcome_message{
     font-size: 34px;
     line-height: 1.8;
-    margin-top: .2rem;
+    margin-top: 1rem;
     margin-bottom: .2rem;
 }
 
 .intro_textito{
     font-size: 18px;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .intro_text_container{
     text-align: center;
 }
 
-/* .imgg{
+.imgg{
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
     border-radius: 50%;
-} */
+}
 
 @media (min-width: 1024px) {
 .intro_container{
@@ -73,5 +77,8 @@
     min-width: 14rem;
     max-height: 14rem;
     max-width: 14rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 14rem;
 }
   }
