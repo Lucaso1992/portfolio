@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
 }
 
 .footer_text{
@@ -17,7 +16,7 @@
 }
 
 @media (min-width: 1024px) {
-    /* .footer_container{
+    .footer_container{
         position: fixed;
-    } */
+    }
 }

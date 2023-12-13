@@ -6,8 +6,6 @@
     width: 80%;
     color: whitesmoke;
     align-self: center;
-    /* margin-top: auto;
-    margin-bottom: auto; */
     height: calc(100vh - 2rem);
 }
 
@@ -28,7 +26,7 @@
 .welcome_message{
     font-size: 34px;
     line-height: 1.8;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: .2rem;
 }
 
