@@ -1,4 +1,10 @@
 .portfolio_container{
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: #0d1117;
+    margin-top: 4rem;
+}
+
+.portfolio_title{
+    color: whitesmoke;
+    text-align: center;
 }
