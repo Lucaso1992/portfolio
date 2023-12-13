@@ -11,3 +11,10 @@ body {
     min-height: 100vh;
     position: relative;
 }
+
+#home,
+#portfolio,
+#productos,
+#contacto {
+  scroll-margin-top: 90px;
+}

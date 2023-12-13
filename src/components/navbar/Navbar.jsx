@@ -12,7 +12,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <a className={`${styles.nav_items_one} nav-link`} href="#"><strong className={styles.strong_items}>Home</strong></a>
-                        <a className={`${styles.nav_items} nav-link`} href="#"><strong className={styles.strong_items}>Portfolio</strong></a>
+                        <a className={`${styles.nav_items} nav-link`} href="#portfolio"><strong className={styles.strong_items}>Portfolio</strong></a>
                         <a className={`${styles.nav_items} nav-link`} href="#"><strong className={styles.strong_items}>About me</strong></a>
                         <a className={`${styles.nav_items} nav-link me-4`} href="#"><strong className={styles.strong_items}>Contact</strong></a>
                     </ul>

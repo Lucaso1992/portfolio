@@ -6,7 +6,8 @@
     width: 80%;
     color: whitesmoke;
     align-self: center;
-    height: calc(100vh - 2rem);
+    /* height: calc(100vh - 1rem); */
+    height: 100vh;
 }
 
 .img_container{
@@ -71,6 +72,7 @@
 
 .welcome_message{
     font-size: 38px;
+    margin-top: 0;
 }
 
 .img_container{
