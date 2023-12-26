@@ -13,6 +13,7 @@
     margin-bottom: .5rem;
     width: fit-content;
     border-radius: 4px;
+    transition: background-color 0.5s ease;
 }
 
 .nav_items_one{
@@ -22,6 +23,7 @@
     margin-bottom: .5rem;
     width: fit-content;
     border-radius: 4px;
+    transition: background-color 0.5s ease;
 }
 
 .nav_items_one:hover{
