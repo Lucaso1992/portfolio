@@ -66,6 +66,13 @@
     margin-top: 1rem;
 }
 
+.agenda_container{
+    width: 150px;
+    height: 100px;
+    margin-top: .7rem;
+    margin-bottom: .3rem;
+}
+
 .img_logo{
     height: 100%;
     width: 100%;
