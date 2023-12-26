@@ -19,7 +19,7 @@
 
 .works_logo_container{
     width: 80%;
-    min-height: 400px;
+    /* min-height: 400px; */
     padding: 2rem;
     background-color: #cccccc18;
     border-radius: 10px;
