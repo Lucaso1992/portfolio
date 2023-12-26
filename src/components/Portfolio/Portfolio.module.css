@@ -50,9 +50,20 @@
     box-shadow: 0 0 20px #888888;
     border: 2px solid #888888;
 }
+
+.wecontain_container{
+    width: 130px;
+    height: 103px;
+}
+
+.cosmos_container{
+    width: 115px;
+    height: 115px;
+}
 .starwars_container{
     height: 97px;
     width: 160px;
+    margin-top: 1rem;
 }
 
 .img_logo{
