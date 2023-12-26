@@ -38,10 +38,10 @@
     padding-right: .8rem;
     color: whitesmoke;
 }
-
-    .strong_items:active{
+  
+.strong_items:active{
         color: rgba(245, 245, 245, 0.516);
-    }
+}
 
     @media (min-width: 992px) {
       .nav_items{
