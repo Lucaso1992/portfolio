@@ -7,6 +7,7 @@ import img4 from "../../assets/agenda.png"
 
 const Portfolio = () => {
     return (
+        
         <div className={styles.portfolio_container}>
             <h2 id="portfolio" className={styles.portfolio_title}><strong>Some of my work</strong></h2>
             <div className={styles.works_logo_container}>

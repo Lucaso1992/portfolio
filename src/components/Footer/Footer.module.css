@@ -1,13 +1,14 @@
 .footer_container{
     width: 100%;
-    min-height: 4rem;
+    min-height: 3.5rem;
     background-color: #010409;
     box-shadow: 0 0 6px white;
     bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
+
 }
 
 .footer_text{
@@ -18,6 +19,6 @@
 
 @media (min-width: 1024px) {
     .footer_container{
-        /* position: fixed; */
+        position: fixed;
     }
 }
