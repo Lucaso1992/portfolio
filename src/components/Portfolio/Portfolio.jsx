@@ -1,4 +1,6 @@
 import styles from "./Portfolio.module.css";
+// import 'animate.css';
+
 import img1 from "../../assets/star-wars.png";
 import img2 from "../../assets/we-contain.png";
 import img3 from "../../assets/cosmos.png";
