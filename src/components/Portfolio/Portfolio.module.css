@@ -3,22 +3,18 @@
 }
 
 .portfolio_container{
-    /* height: 100vh; */
-    background-color: #0d1117;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
+    height: 90vh;
 }
 
 .portfolio_title{
-    color: whitesmoke;
+    color: #0d1117;
     text-align: center;
-    margin-top: 3rem;
-    /* border-bottom: 0.125rem solid whitesmoke;
-    padding-bottom: 3rem;
-    padding-left: 3rem;
-    padding-right: 3rem; */
 }
 
 .works_logo_container{
@@ -26,7 +22,6 @@
     padding: 3rem;
     background-color: #cccccc18;
     border-radius: 10px;
-    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +93,7 @@
 
     .portfolio_title{
         width: 50%;
-        border-bottom: 0.125rem solid whitesmoke;
+        border-bottom: 0.125rem solid #0d1117;
         padding-bottom: 3rem;
         padding-left: 3rem;
         padding-right: 3rem;

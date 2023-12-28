@@ -3,6 +3,7 @@
     box-shadow: 0 0 6px white;
     width: 100%;
     position: fixed;
+    z-index: 1000;
 } 
 
 .nav_items {

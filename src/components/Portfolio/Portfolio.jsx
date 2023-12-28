@@ -1,5 +1,7 @@
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 import styles from "./Portfolio.module.css";
-// import 'animate.css';
 
 import img1 from "../../assets/star-wars.png";
 import img2 from "../../assets/we-contain.png";
@@ -7,8 +9,17 @@ import img3 from "../../assets/cosmos.png";
 import img4 from "../../assets/agenda.png";
 
 const Portfolio = () => {
+
+  const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["end end", "start start"]
+  });
+
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+
   return (
-    <div className={styles.portfolio_container}>
+    <motion.section style={{ opacity }} ref={{ targetRef }} className={styles.portfolio_container}>
       <h2 id="portfolio" className={styles.portfolio_title}>
         <strong>Some of my works</strong>
       </h2>
@@ -54,7 +65,7 @@ const Portfolio = () => {
           </div>
         </a>
       </div>
-    </div>
+    </motion.section>
   );
 };
 
