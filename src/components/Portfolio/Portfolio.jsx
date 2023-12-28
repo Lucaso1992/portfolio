@@ -21,7 +21,7 @@ const Portfolio = () => {
   return (
     <motion.section style={{ opacity }} ref={{ targetRef }} className={styles.portfolio_container}>
       <h2 id="portfolio" className={styles.portfolio_title}>
-        <strong>Some of my works</strong>
+        <strong> Some of my works</strong>
       </h2>
       <div className={styles.works_logo_container}>
         <a href="https://www.wecontain.com.ar/" target="_blank" className={styles.anchor}>
