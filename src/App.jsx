@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 
-import Navbar from './components/Navbar/Navbar'
-import Footer from './components/Footer/Footer'
-import Introduction from './components/Introduction/Introduction'
-import Portfolio from './components/Portfolio/Portfolio'
+import Navbar from './components/Navbar/Navbar.jsx'
+import Footer from './components/Footer/Footer.jsx'
+import Introduction from './components/Introduction/Introduction.jsx'
+import Portfolio from './components/Portfolio/Portfolio.jsx'
 
 import './App.css'
 
