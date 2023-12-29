@@ -9,11 +9,9 @@ import img3 from "../../assets/cosmos.png";
 import img4 from "../../assets/agenda.png";
 
 const Portfolio = () => {
-
   const [matches, setMatches] = useState(false);
 
   const useMediaQuery = (query) => {
-
       const media = window.matchMedia(query);
       if (media.matches !== matches) {
         setMatches(media.matches);
