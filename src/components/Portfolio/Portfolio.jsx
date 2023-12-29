@@ -9,7 +9,7 @@ import img3 from "../../assets/cosmos.png";
 import img4 from "../../assets/agenda.png";
 
 const Portfolio = () => {
-  
+
   const [matches, setMatches] = useState(false);
 
   const useMediaQuery = (query) => {
@@ -38,33 +38,28 @@ const Portfolio = () => {
       };
   };
 
-  // useEffect(() => {
-  //   useMediaQuery()
-  //   return matches
-  // }, [matches, query])
-
   const isSmall = () => useMediaQuery("(min-width: 320px)");
   const isMedium = () => useMediaQuery("(min-width: 768px)");
 
   const targetRef = useRef<HTMLDivElement>(null);
 
-  // Scroll para pantallas no móviles
+  // Scroll para pantallas Desktop
   const { scrollYProgress: scrollYProgressDesktop } = useScroll({
     target: targetRef,
     offset: ["end end", "start start"],
   });
 
-  // Scroll para móviles
+  // Scroll para Mobile
   const { scrollYProgress: scrollYProgressMobile } = useScroll({
     target: targetRef,
     offset: ["end end", "start end"],
   });
 
-  // Opacidad para pantallas no móviles
+  // Opacidad para pantallas Desktop
   const opacityDesktop = useTransform(scrollYProgressDesktop, [0, 0.5], [1, 0]);
 
-  // Opacidad para móviles
-  const opacityMobile = useTransform(scrollYProgressMobile, [0.4, 0.5], [1, 0]);
+  // Opacidad para Mobile
+  const opacityMobile = useTransform(scrollYProgressMobile, [0.48, 0.57], [1, 0]);
 
   const portfolioStyle = {};
 
@@ -73,8 +68,6 @@ const Portfolio = () => {
   } else if (isMedium()) {
     portfolioStyle.opacity = opacityDesktop;
   }
-
-  console.log(portfolioStyle)
 
   return (
     <motion.section style={{ opacity: portfolioStyle.opacity }} ref={{targetRef}} className={styles.portfolio_container}>
