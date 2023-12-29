@@ -88,9 +88,15 @@
     text-align: center;
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1370px) {
     .works_logo_container{
-        width: 80%;
+        width: 90%;
+        padding: 0;
+    }
+
+    .works_logo{
+        width: 190px;
+        height: 290px;
     }
 
     .portfolio_title{
@@ -100,10 +106,30 @@
         padding-left: 3rem;
         padding-right: 3rem;
         padding-top: 0;
+        margin-bottom: 3rem;
     }
-    
     .portfolio_container{
         height: 90vh;
+    }
+    
+  }
+
+  @media (min-width: 1370px) {    
+    .portfolio_container{
+        height: 90vh;
+    }
+    .portfolio_title{
+        width: 50%;
+        border-bottom: 0.125rem solid #0d1117;
+        padding-top: 0;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .works_logo{
+        width: 220px;
+        height: 300px;
     }
     
   }

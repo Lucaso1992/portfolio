@@ -13,7 +13,7 @@ const Portfolio = () => {
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["end end", "start start"]
+    offset: ["end end", "start end"]
   });
 
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
