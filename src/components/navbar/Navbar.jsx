@@ -17,7 +17,7 @@ const Navbar = ({sectionColors}) => {
             <ul className="navbar-nav ms-auto">
                 <li className="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                     <a className={`${styles.nav_items_one} nav-link`} href="#">
-                    <strong className={styles.strong_items}>Home</strong>
+                    <strong className={styles.strong_items}>Homee</strong>
                     </a>
                 </li>
                 <li className="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
