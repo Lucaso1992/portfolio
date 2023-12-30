@@ -10,33 +10,33 @@ import img4 from "../../assets/agenda.png";
 
 const Portfolio = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [isMediumScreen, setIsMediumScreen] = useState(false);
 
   const useMediaQuery = (query) => {
-    return window.matchMedia(query);
+    return new Promise((resolve) => {
+      const mediaQuery = window.matchMedia(query);
+      resolve(mediaQuery.matches);
+
+      const handleMediaQueryChange = () => {
+        resolve(mediaQuery.matches);
+      };
+
+      mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+      return () => {
+        mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      };
+    });
   };
 
   const targetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const smallScreenListener = useMediaQuery("(max-width: 767px)");
-    const mediumScreenListener = useMediaQuery("(min-width: 768px)");
-
-    const handleSmallScreenChange = () => {
-      setIsSmallScreen(smallScreenListener.matches);
+    const fetchMediaQuery = async () => {
+      const isSmall = await useMediaQuery("(max-width: 767px)");
+      setIsSmallScreen(isSmall);
     };
 
-    const handleMediumScreenChange = () => {
-      setIsMediumScreen(mediumScreenListener.matches);
-    };
-
-    smallScreenListener.addEventListener("change", handleSmallScreenChange);
-    mediumScreenListener.addEventListener("change", handleMediumScreenChange);
-
-    return () => {
-      smallScreenListener.removeEventListener("change", handleSmallScreenChange);
-      mediumScreenListener.removeEventListener("change", handleMediumScreenChange);
-    };
+    fetchMediaQuery();
   }, []);
 
   const { scrollYProgress: scrollYProgressDesktop } = useScroll({
