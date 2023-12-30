@@ -43,7 +43,7 @@ const Introduction = () => {
       });
 
       const opacityDesktop = useTransform(scrollYProgressDesktop, [0, 0.5], [1, 0]);
-      const opacityMobile = useTransform(scrollYProgressMobile, [0, 0.2], [1, 0], {
+      const opacityMobile = useTransform(scrollYProgressMobile, [0, 0.1], [1, 0], {
         clamp: false, 
       });
     
