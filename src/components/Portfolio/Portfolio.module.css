@@ -8,14 +8,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 10rem; */
-    /* height: 90vh; */
 }
 
 .portfolio_title{
     color: #170d0e;
     text-align: center;
-    font-size: 34px;
+    font-size: 32px;
     padding-top: 3rem;
     
 }
@@ -126,6 +124,7 @@
         padding-bottom: 3rem;
         padding-left: 3rem;
         padding-right: 3rem;
+        font-size: 38px;
     }
 
     .works_logo{

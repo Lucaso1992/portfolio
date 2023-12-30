@@ -9,66 +9,53 @@ import img3 from "../../assets/cosmos.png";
 import img4 from "../../assets/agenda.png";
 
 const Portfolio = () => {
-  const [matches, setMatches] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isMediumScreen, setIsMediumScreen] = useState(false);
 
   const useMediaQuery = (query) => {
-      const media = window.matchMedia(query);
-      if (media.matches !== matches) {
-        setMatches(media.matches);
-      }
-
-      const mediaQueryListener = () => {
-        setMatches(media.matches);
-      };
-
-      if (typeof media.addEventListener === "function") {
-        media.addEventListener("change", mediaQueryListener);
-      } else {
-        media.addListener(mediaQueryListener);
-      }
-
-      return () => {
-        if (typeof media.removeEventListener === "function") {
-          media.removeEventListener("change", mediaQueryListener);
-        } else {
-          media.removeListener(mediaQueryListener);
-        }
-      };
+    return window.matchMedia(query);
   };
-
-  const isSmall = () => useMediaQuery("(min-width: 320px)");
-  const isMedium = () => useMediaQuery("(min-width: 768px)");
 
   const targetRef = useRef<HTMLDivElement>(null);
 
-  // Scroll para pantallas Desktop
+  useEffect(() => {
+    const smallScreenListener = useMediaQuery("(max-width: 767px)");
+    const mediumScreenListener = useMediaQuery("(min-width: 768px)");
+
+    const handleSmallScreenChange = () => {
+      setIsSmallScreen(smallScreenListener.matches);
+    };
+
+    const handleMediumScreenChange = () => {
+      setIsMediumScreen(mediumScreenListener.matches);
+    };
+
+    smallScreenListener.addEventListener("change", handleSmallScreenChange);
+    mediumScreenListener.addEventListener("change", handleMediumScreenChange);
+
+    return () => {
+      smallScreenListener.removeEventListener("change", handleSmallScreenChange);
+      mediumScreenListener.removeEventListener("change", handleMediumScreenChange);
+    };
+  }, []);
+
   const { scrollYProgress: scrollYProgressDesktop } = useScroll({
     target: targetRef,
     offset: ["end end", "start start"],
   });
 
-  // Scroll para Mobile
   const { scrollYProgress: scrollYProgressMobile } = useScroll({
     target: targetRef,
     offset: ["end end", "start end"],
   });
 
-  // Opacidad para pantallas Desktop
   const opacityDesktop = useTransform(scrollYProgressDesktop, [0, 0.5], [1, 0]);
-
-  // Opacidad para Mobile
   const opacityMobile = useTransform(scrollYProgressMobile, [0.48, 0.57], [1, 0]);
 
-  const portfolioStyle = {};
-
-  if (isSmall()) {
-    portfolioStyle.opacity = opacityMobile;
-  } else if (isMedium()) {
-    portfolioStyle.opacity = opacityDesktop;
-  }
+  const opacity = isSmallScreen ? opacityMobile : opacityDesktop;
 
   return (
-    <motion.section style={{ opacity: portfolioStyle.opacity }} ref={{targetRef}} className={styles.portfolio_container}>
+    <motion.section style={{ opacity }} ref={{targetRef}} className={styles.portfolio_container}>
       <h2 id="portfolio" className={styles.portfolio_title}>
         <strong> Some of my works</strong>
       </h2>
