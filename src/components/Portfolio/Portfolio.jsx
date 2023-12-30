@@ -10,25 +10,21 @@ import img4 from "../../assets/agenda.png";
 
 const Portfolio = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const targetRef = useRef<HTMLDivElement>(null);
 
   const useMediaQuery = (query) => {
     return new Promise((resolve) => {
       const mediaQuery = window.matchMedia(query);
       resolve(mediaQuery.matches);
-
       const handleMediaQueryChange = () => {
         resolve(mediaQuery.matches);
       };
-
       mediaQuery.addEventListener("change", handleMediaQueryChange);
-
       return () => {
         mediaQuery.removeEventListener("change", handleMediaQueryChange);
       };
     });
   };
-
-  const targetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchMediaQuery = async () => {
