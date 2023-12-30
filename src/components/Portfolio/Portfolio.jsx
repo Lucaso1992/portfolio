@@ -50,7 +50,7 @@ const Portfolio = () => {
   });
 
   const opacityDesktop = useTransform(scrollYProgressDesktop, [0, 0.5], [1, 0]);
-  const opacityMobile = useTransform(scrollYProgressMobile, [0.4, 0.55], [1, 0], {
+  const opacityMobile = useTransform(scrollYProgressMobile, [0.4, 0.66], [1, 0], {
     clamp: false, 
   });
 
