@@ -13,7 +13,7 @@ const Introduction = () => {
         offset: ["start start", "end end"]
     });
 
-    const opacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+    const opacity = useTransform(scrollYProgress, [0, 0.38], [1, 0]);
     return (
 
         <motion.section style={{ opacity }} ref={{ targetRef }} className={styles.intro_container}>
