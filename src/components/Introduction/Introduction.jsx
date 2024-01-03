@@ -1,36 +1,14 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
+import useAppContext from "../../store/AppContext";
 
 import styles from "./Introduction.module.css";
 
 import img from "../../assets/profile-img.jpg"
 
 const Introduction = () => {
-    const [isSmallScreen, setIsSmallScreen] = useState(false);
-    const targetRef = useRef < HTMLDivElement > (null);
-
-    const useMediaQuery = (query) => {
-        return new Promise((resolve) => {
-          const mediaQuery = window.matchMedia(query);
-          resolve(mediaQuery.matches);
-          const handleMediaQueryChange = () => {
-            resolve(mediaQuery.matches);
-          };
-          mediaQuery.addEventListener("change", handleMediaQueryChange);
-          return () => {
-            mediaQuery.removeEventListener("change", handleMediaQueryChange);
-          };
-        });
-      };
-
-      useEffect(() => {
-        const fetchMediaQuery = async () => {
-          const isSmall = await useMediaQuery("(max-width: 767px)");
-          setIsSmallScreen(isSmall);
-        };
-    
-        fetchMediaQuery();
-      }, []);
+      const { store } = useAppContext();
+      const targetRef = useRef<HTMLDivElement>(null);
 
       const { scrollYProgress: scrollYProgressDesktop } = useScroll({
         target: targetRef,
@@ -47,7 +25,7 @@ const Introduction = () => {
         clamp: false, 
       });
     
-      const opacity = isSmallScreen ? opacityMobile : opacityDesktop;
+      const opacity = store.isSmallScreen ? opacityMobile : opacityDesktop;
 
 
     return (
