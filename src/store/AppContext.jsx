@@ -4,7 +4,29 @@ const AppContext = createContext();
 
 export const AppProvider = ({children}) => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const sectionColors = [
+      { start: 0, end: 844, color: "whitesmoke" },
+      { start: 844, end: 3000, color: "#010409" },  
+      // { start: 1500, end: 2500, color: "#010409" },  
+      // { start: 2500, end: 3500, color: "whitesmoke" },  
     
+    ];
+
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrollPosition(window.scrollY);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+
+    const isScrolled = scrollPosition;
+
     const useMediaQuery = (query) => {
         return new Promise((resolve) => {
           const mediaQuery = window.matchMedia(query);
@@ -27,7 +49,7 @@ export const AppProvider = ({children}) => {
         fetchMediaQuery();
       }, []);
 
-    const store = {isSmallScreen};
+    const store = {isSmallScreen, isScrolled, sectionColors};
 
     // const actions = {};
 

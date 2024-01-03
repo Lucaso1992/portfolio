@@ -10,18 +10,14 @@ const Portfolio = () => {
   const { store } = useAppContext();
   const targetRef = useRef < HTMLDivElement > (null);
 
-  const { scrollYProgress: scrollYProgressDesktop } = useScroll({
+  const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["end end", "start start"],
+    offset: ["start start", "end start"],
   });
 
-  const { scrollYProgress: scrollYProgressMobile } = useScroll({
-    target: targetRef,
-    offset: ["end end", "start end"],
-  });
 
-  const opacityDesktop = useTransform(scrollYProgressDesktop, [0, 0.5], [1, 0]);
-  const opacityMobile = useTransform(scrollYProgressMobile, [0.4, 0.66], [1, 0], {
+  const opacityDesktop = useTransform(scrollYProgress, [0.12, 0.24], [0, 1]);
+  const opacityMobile = useTransform(scrollYProgress, [0.12, 0.18], [0, 1], {
     clamp: false,
   });
 

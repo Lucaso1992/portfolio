@@ -10,18 +10,13 @@ const Introduction = () => {
       const { store } = useAppContext();
       const targetRef = useRef<HTMLDivElement>(null);
 
-      const { scrollYProgress: scrollYProgressDesktop } = useScroll({
+      const { scrollYProgress } = useScroll({
         target: targetRef,
-        offset: ["start start", "end end"],
+        offset: ["start start", "end start"],
       });
 
-      const { scrollYProgress: scrollYProgressMobile } = useScroll({
-        target: targetRef,
-        offset: ["start start", "end end"], 
-      });
-
-      const opacityDesktop = useTransform(scrollYProgressDesktop, [0, 0.5], [1, 0]);
-      const opacityMobile = useTransform(scrollYProgressMobile, [0, 0.25], [1, 0], {
+      const opacityDesktop = useTransform(scrollYProgress, [0, 0.12], [1, 0]);
+      const opacityMobile = useTransform(scrollYProgress, [0, 0.12], [1, 0], {
         clamp: false, 
       });
     

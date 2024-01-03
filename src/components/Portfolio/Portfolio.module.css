@@ -87,7 +87,7 @@
 .technologies{
     display: flex;
     flex-direction: row;
-    font-size: 2rem;
+    font-size: 1.8rem;
     gap: .2rem;
     color: rgba(255, 255, 255, 0.338);
     
@@ -116,14 +116,14 @@
         font-size: 38px;
     }
     .portfolio_container{
-        height: 90vh;
+        height: 100vh;
     }
     
   }
 
   @media (min-width: 1370px) {    
     .portfolio_container{
-        height: 90vh;
+        height: 100vh;
     }
     .portfolio_title{
         width: 50%;

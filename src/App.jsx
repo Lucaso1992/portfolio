@@ -1,44 +1,26 @@
 import { useEffect, useState } from 'react'
 
+import useAppContext from './store/AppContext.jsx'
+
 import Navbar from './components/Navbar/Navbar.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Introduction from './components/Introduction/Introduction.jsx'
 import Portfolio from './components/Portfolio/Portfolio.jsx'
+import AboutMe from './components/About me/About-me.jsx'
+import Contact from './components/Contact/Contact.jsx'
 
 import './App.css'
 
 function App() {
-
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const sectionColors = [
-    { start: 0, end: 844, color: "whitesmoke" },
-    { start: 844, end: 3000, color: "#010409" },  
-    // { start: 1500, end: 2500, color: "#010409" },  
-    // { start: 2500, end: 3500, color: "whitesmoke" },  
-  
-  ];
-
-  const isScrolled = scrollPosition;
-
+  const { store } = useAppContext();
   return (
     <>
-    <Navbar sectionColors={sectionColors} isScrolled={isScrolled}/>
+    <Navbar sectionColors={store.sectionColors} isScrolled={store.isScrolled}/>
     <Introduction/>
     <Portfolio/>
-    <Footer sectionColors={sectionColors} isScrolled={isScrolled}/>
+    <AboutMe/>
+    <Contact/>
+    <Footer sectionColors={store.sectionColors} isScrolled={store.isScrolled}/>
     </>
   )
 }

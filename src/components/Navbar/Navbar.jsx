@@ -26,12 +26,12 @@ const Navbar = ({sectionColors}) => {
                     </a>
                 </li>
                 <li className="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                    <a className={`${styles.nav_items} nav-link`} href="#">
+                    <a className={`${styles.nav_items} nav-link`} href="#about">
                     <strong className={styles.strong_items}>About me</strong>
                     </a>
                 </li>
                 <li className="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                    <a className={`${styles.nav_items} nav-link me-4`} href="#">
+                    <a className={`${styles.nav_items} nav-link me-4`} href="#contact">
                     <strong className={styles.strong_items}>Contact</strong>   
                     </a>
                 </li>
