@@ -15,8 +15,8 @@ const Contact = () => {
     });
   
   
-    const opacityDesktop = useTransform(scrollYProgress, [0.65, 0.75], [0, 1]);
-    const opacityMobile = useTransform(scrollYProgress, [0.65, 0.75], [0, 1], {
+    const opacityDesktop = useTransform(scrollYProgress, [0.6, 0.75], [0, 1]);
+    const opacityMobile = useTransform(scrollYProgress, [0.6, 0.75], [0, 1], {
       clamp: false,
     });
     

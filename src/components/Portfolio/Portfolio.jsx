@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 import useAppContext from "../../store/AppContext";
@@ -7,8 +7,18 @@ import worksData from "./Works";
 import styles from "./Portfolio.module.css";
 
 const Portfolio = () => {
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+
   const { store } = useAppContext();
   const targetRef = useRef < HTMLDivElement > (null);
+
+  const handleFlip = () => {
+    if(!isAnimating) {
+      setIsFlipped(!isFlipped);
+      setIsAnimating(true)
+    }
+  }
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -16,8 +26,8 @@ const Portfolio = () => {
   });
 
 
-  const opacityDesktop = useTransform(scrollYProgress, [0.12, 0.24], [0, 1]);
-  const opacityMobile = useTransform(scrollYProgress, [0.11, 0.18], [0, 1], {
+  const opacityDesktop = useTransform(scrollYProgress, [0.12, 0.24, 0.5], [0, 1, 0]);
+  const opacityMobile = useTransform(scrollYProgress, [0.11, 0.17], [0, 1], {
     clamp: false,
   });
 
@@ -31,7 +41,7 @@ const Portfolio = () => {
       <div className={styles.works_logo_container}>
         {worksData.map((work) => (
           <a key={work.key} href={work.link} target="_blank" className={styles.anchor}>
-            <div className={styles.works_logo}>
+            <div className={styles.works_logo}> 
               <div className={styles[work.containerName]}>
                 <img src={work.img} className={styles.img_logo} alt={work.key} />
               </div>

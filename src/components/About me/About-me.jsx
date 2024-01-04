@@ -16,8 +16,8 @@ const AboutMe = () => {
     });
   
   
-    const opacityDesktop = useTransform(scrollYProgress, [0.5, 0.6], [0, 1]);
-    const opacityMobile = useTransform(scrollYProgress, [0.5, 0.6], [0, 1], {
+    const opacityDesktop = useTransform(scrollYProgress, [0.35, 0.5, 0.7], [0, 1, 0]);
+    const opacityMobile = useTransform(scrollYProgress, [0.35, 0.5, 0.7], [0, 1, 0], {
       clamp: false,
     });
     
@@ -28,7 +28,7 @@ const AboutMe = () => {
              consectetur adipisicing elit. Ab voluptates eligendi, possimus deserunt nihil fuga debitis 
              veniam quibusdam! Eius obcaecati eum perferendis, incidunt odit doloremque neque ad harum
               sunt illum quaerat, ut recusandae assumenda ab enim quam est reiciendis suscipit id quidem 
-              vitae? Illum incidunt fugit ratione deleniti vol</h2>
+              vitae? Illum incidunt fugit ratio</h2>
         </motion.section>
     )
 }
