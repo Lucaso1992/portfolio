@@ -1,0 +1,196 @@
+.flip_card{
+    perspective: 1000px;
+    border-radius: 12px;
+}
+
+.flip_card_inner{
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    width: 220px;
+    height: 300px;
+}
+
+.flip_card_front, .flip_card_back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip_card_front{
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 6px #ff0000aa;;
+    background-color: #010409;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.flip_card_front:hover{
+    box-shadow: 0 0 15px #FF0000;;
+}
+
+.flip_card_front:hover .work_title{
+    text-shadow: 3px 3px 13px #FF0000;
+}
+
+.flip_card_back{
+    background-color: rgba(171, 171, 171, 0.813);;
+    transform: rotateY(180deg);
+    color: black;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 12px #010409;
+    border-radius: 6px;
+    padding: .5rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.flip_card_back{
+    cursor: pointer;
+}
+
+.img_logo{
+    height: 100%;
+    width: 100%;
+}
+
+.tech_stack{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8rem;
+    gap: .2rem;
+    color: rgba(255, 255, 255, 0.338);
+    /* margin-top: auto; */
+    margin-bottom: 1rem;
+}
+
+.work_title{
+    margin-top: auto;
+    margin-bottom: .5rem;
+    color: rgba(245, 245, 245, 0.927);
+}
+
+.works_texts{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.wecontain_container{
+    width: 150px;
+    height: 113.769px;
+    margin-top: 2.2rem;
+    transition: transform 0.6s ease;
+}
+
+.wecontain_container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cosmos_container{
+    width: 130px;
+    height: 130px; 
+    margin-top: 1.7rem; 
+    transition: transform 0.6s ease;
+}
+.cosmos_container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.starwars_container{
+    width: 180px;
+    height: 109.125px;
+    margin-top: 2.3rem;
+    transition: transform 0.6s ease;
+}
+.starwars_container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agenda_container{
+    width: 150px;
+    height: 100px;
+    margin-top: 2.3rem;
+    margin-bottom: .3rem;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+.agenda_container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.links_div{
+    width: 100%;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .4rem;
+}
+.plus{
+    color: rgba(245, 245, 245, 0.648);
+    border: 1.8px solid rgba(245, 245, 245, 0.648);
+    border-radius: 40%;
+    padding: .3rem;
+    font-size: 1.7rem;
+    margin-left: .55rem;
+    transition: background-color 0.6s ease, transform 0.6s ease;; 
+    
+}
+
+.plus:hover {
+    background-color:rgba(245, 245, 245, 0.212);
+    color: whitesmoke;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.button_web{
+    display: flex;
+    align-self: center;
+    font-size: 1.6rem;
+    color: rgba(245, 245, 245, 0.648);
+    margin-right: .3rem;
+    transition: transform 0.6s ease;
+    margin-right: .7rem;
+}
+
+.button_web:hover{
+    color: rgba(245, 245, 245, 0.879);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button_github{
+    display: flex;
+    align-self: center;
+    font-size: 1.6rem;
+    color: rgba(245, 245, 245, 0.648);
+    margin-right: .3rem;
+    margin-left: auto;
+    transition: transform 0.6s ease;
+    margin-right: .8rem;
+}
+
+.button_github:hover{
+    color: rgba(245, 245, 245, 0.879);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1370px) {
+    .flip_card_inner{
+        width: 210px;
+        height: 320px;
+    }
+}

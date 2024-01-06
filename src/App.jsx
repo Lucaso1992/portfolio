@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
+import { BrowserRouter } from 'react-router-dom';
 
 import useAppContext from './store/AppContext.jsx'
 
@@ -14,14 +15,14 @@ import './App.css'
 function App() {
   const { store } = useAppContext();
   return (
-    <>
+    <BrowserRouter basename='/'>
     <Navbar sectionColors={store.sectionColors} isScrolled={store.isScrolled}/>
     <Introduction/>
     <Portfolio/>
     <AboutMe/>
     <Contact/>
     <Footer sectionColors={store.sectionColors} isScrolled={store.isScrolled}/>
-    </>
+    </BrowserRouter>
   )
 }
 

@@ -4,7 +4,6 @@ import img3 from "../../assets/cosmos.png";
 import img4 from "../../assets/agenda.png";
 
 import { FaBootstrap } from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa6";
@@ -13,34 +12,46 @@ import { FaHtml5 } from "react-icons/fa";
 const worksData = [
   {
     key: 'wecontain',
+    title: "WE CONTAIN",
     img: img2,
-    description: "Design and development of a corporate website for a container rental company.",
+    description: "Design and development of a corporate website for a container rental company in Buenos Aires, Argentina. Using React, JavaScript, Bootstrap, SASS, HTML, CSS and Figma.",
     containerName: "wecontain_container",
-    link: "https://www.wecontain.com.ar/",
+    web: "https://www.wecontain.com.ar/",
+    github: "https://github.com/Lucaso1992/we-contain",
+    backtext: "",
     technologies: [<FaReact />, <IoLogoJavascript/>, <FaBootstrap />, <FaCss3Alt />, <FaHtml5 />]
   },
   {
     key: 'cosmos',
+    title: "COSMOS",
     img: img3,
-    description: "FrontEnd Development of a Dating Web App connecting people through astrology.",
+    description: "Dating Web App. Front-End development created with React, JavaScript, HTML, CSS, socket.io and formik. Applying knowledge of authentication (JWT).",
     containerName: "cosmos_container",
-    link: "https://cosmos-app-1234.onrender.com/",
+    web: "https://cosmos-app-1234.onrender.com/",
+    github: "https://github.com/Lucaso1992/cosmos-date-app",
+    backtext: "",
     technologies: [<FaReact />, <IoLogoJavascript/>, <FaBootstrap />, <FaCss3Alt />, <FaHtml5 />]
   },
   {
     key: 'starwars',
+    title: "STAR WARS BLOG",
     img: img1,
-    description: "FrontEnd development, connected with external API. Allows to Login and add favorite characters.",
+    description: "Front-End development, connected with an external API. Allows to create a user with email and password, login and add favorite characters. Implementing access to dynamic routes and user authentication.",
     containerName: "starwars_container",
-    link: "https://star-wars-reloaded.vercel.app/",
+    web: "https://star-wars-reloaded.vercel.app/",
+    github: "https://github.com/Lucaso1992/star-wars-reloaded",
+    backtext: "",
     technologies: [<FaReact />, <IoLogoJavascript/>, <FaBootstrap />, <FaCss3Alt />, <FaHtml5 />]
   },
   {
     key: 'agenda',
+    title: "CONTACTS AGENDA",
     img: img4,
-    description: "Agenda app connected to an external API. Create, edit or delete your contacts list.",
+    description: "Create, edit or delete your contacts list. Agenda app connected to an external API, allows you to save your contacts. React skills: state management, event handling and context management.",
     containerName: "agenda_container",
-    link: "https://add-contacts-xi.vercel.app/",
+    web: "https://add-contacts-xi.vercel.app/",
+    github: "https://github.com/Lucaso1992/add-contacts",
+    backtext: "",
     technologies: [<FaReact />, <IoLogoJavascript/>, <FaBootstrap />, <FaCss3Alt />, <FaHtml5 />] 
   },
 ];

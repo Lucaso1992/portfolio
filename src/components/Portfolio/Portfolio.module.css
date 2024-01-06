@@ -1,7 +1,3 @@
-.anchor{
-    text-decoration: none;
-}
-
 .portfolio_container{
     background-color: whitesmoke;
     display: flex;
@@ -13,9 +9,8 @@
 .portfolio_title{
     color: #170d0e;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     padding-top: 3rem;
-    
 }
 
 .works_logo_container{
@@ -29,95 +24,6 @@
     gap: 2.5rem;
 }
 
-.works_logo{
-    width: 220px;
-    height: 300px;
-    box-shadow: 4px 4px 8px #010409;
-    background-color: #010409;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: whitesmoke;
-    padding: 1rem;
-    transition: box-shadow 0.3s ease;
-    transition: transform 0.3s ease-in-out;
-}
-
-.works_logo:hover{
-    box-shadow: 0 0 20px #0d1117;
-    transform: scale(1.1);
-}
-
-.wecontain_container{
-    width: 130px;
-    height: 103px;
-}
-
-.cosmos_container{
-    width: 115px;
-    height: 115px;
-}
-.starwars_container{
-    height: 97px;
-    width: 160px;
-    margin-top: 1rem;
-}
-
-.agenda_container{
-    width: 150px;
-    height: 100px;
-    margin-top: .7rem;
-    margin-bottom: .3rem;
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.img_logo{
-    height: 100%;
-    width: 100%;
-}
-
-.works_texts{
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
-}
-
-.technologies{
-    display: flex;
-    flex-direction: row;
-    font-size: 1.8rem;
-    gap: .2rem;
-    color: rgba(255, 255, 255, 0.338);
-    
-}
-
-/* .flip_card{
-    perspective: 1000px;
-}
-
-.flip-card-inner{
-    transition: 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip_card_front, .flip_card_back{
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.flip_card_front{
-    width: 100%;
-    height: 100%;
-}
-
-.flip_card_back{
-    background-color: rgba(255, 255, 255, 0.338);;
-    transform: rotateY(180deg);
-    color: black;
-} */
-
 @media only screen and (min-width: 992px) and (max-width: 1370px) {
     .works_logo_container{
         width: 90%;
@@ -125,15 +31,10 @@
         gap: 1.5rem;
     }
 
-    .works_logo{
-        width: 210px;
-        height: 320px;
-    }
-
     .portfolio_title{
         width: 50%;
-        border-bottom: 0.125rem solid #0d1117;
-        padding-bottom: 3rem;
+        border-bottom: .4rem solid #0d1117;
+        padding-bottom: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
         padding-top: 0;
@@ -143,7 +44,6 @@
     .portfolio_container{
         height: 100vh;
     }
-    
   }
 
   @media (min-width: 1370px) {    
@@ -152,9 +52,9 @@
     }
     .portfolio_title{
         width: 50%;
-        border-bottom: 0.125rem solid #0d1117;
+        border-bottom: .4rem solid #0d1117;
         padding-top: 0;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
         font-size: 38px;
