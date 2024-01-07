@@ -25,7 +25,7 @@ const worksData = [
     key: 'cosmos',
     title: "COSMOS",
     img: img3,
-    description: "Dating Web App. Front-End development created with React, JavaScript, HTML, CSS, socket.io and formik. Applying knowledge of authentication (JWT).",
+    description: "Dating Web App. Front-End development created with React, JavaScript, HTML, CSS. Applying knowledge of authentication (JWT). Cosmos connect people through astrology",
     containerName: "cosmos_container",
     web: "https://cosmos-app-1234.onrender.com/",
     github: "https://github.com/Lucaso1992/cosmos-date-app",

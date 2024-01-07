@@ -1,12 +1,14 @@
 import styles from "./Navbar.module.css";
 
-const Navbar = ({sectionColors}) => {
-    const currentColor = sectionColors.find(
-        ({ start, end }) => window.scrollY >= start && window.scrollY < end
-      )?.color || "whitesmoke";
+const Navbar = ({currentColor}) => {
+    // const currentColor = sectionColors.find(
+    //     ({ start, end }) => window.scrollY >= start && window.scrollY < end
+    //   )?.color || "whitesmoke";
+
+    // style={{ boxShadow: `0 0 6px ${currentColor}` }}
 
   return (
-    <nav className={`${styles.navbar} navbar navbar-expand-lg`} style={{ boxShadow: `0 0 6px ${currentColor}` }}>
+    <nav className={`${styles.navbar} navbar navbar-expand-lg`}>
     <div className="container-fluid">
         <button className="navbar-dark navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"

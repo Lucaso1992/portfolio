@@ -7,9 +7,9 @@ export const AppProvider = ({children}) => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const sectionColors = [
       { start: 0, end: 844, color: "whitesmoke" },
-      { start: 844, end: 3000, color: "#010409" },  
-      // { start: 1500, end: 2500, color: "#010409" },  
-      // { start: 2500, end: 3500, color: "whitesmoke" },  
+      { start: 844, end: 1750, color: "#010409" },  
+      { start: 1750, end: 2600, color: "whitesmoke" },  
+      { start: 2500, end: 3500, color: "#010409" },  
     
     ];
 
@@ -50,8 +50,6 @@ export const AppProvider = ({children}) => {
       }, []);
 
     const store = {isSmallScreen, isScrolled, sectionColors};
-
-    // const actions = {};
 
     return(
         <AppContext.Provider value={{store}}>
