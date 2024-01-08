@@ -3,8 +3,7 @@ import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
 
 import { FaPlus } from "react-icons/fa6";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 import styles from "./Card.module.css"
 

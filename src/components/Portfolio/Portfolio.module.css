@@ -9,8 +9,9 @@
 .portfolio_title{
     color: #170d0e;
     text-align: center;
-    font-size: 38px;
+    font-size: 70px;
     padding-top: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .works_logo_container{
@@ -33,13 +34,14 @@
 
     .portfolio_title{
         width: 50%;
-        border-bottom: .4rem solid #0d1117;
+        border-bottom: .2rem solid #170d11;
         padding-bottom: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
         padding-top: 0;
         margin-bottom: 3rem;
-        font-size: 38px;
+        font-size: 76px;
+        font-family: 'Bebas Neue', sans-serif;
     }
     .portfolio_container{
         height: 100vh;
@@ -52,11 +54,12 @@
     }
     .portfolio_title{
         width: 50%;
-        border-bottom: .4rem solid #0d1117;
+        border-bottom: .2rem solid #0d1117;
         padding-top: 0;
         padding-bottom: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
-        font-size: 38px;
+        font-size: 78px;
+        font-family: 'Bebas Neue', sans-serif;
     }
   }
