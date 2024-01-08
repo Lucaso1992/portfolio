@@ -1,4 +1,4 @@
-.intro_container{
+.intro_div{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -16,6 +16,7 @@
     max-width: 11rem;
     align-self: center;
     height: 11rem;
+    margin-top: .5rem;
 }
 
 .remarked{
@@ -26,18 +27,22 @@
 .welcome_message{
     font-size: 34px;
     line-height: 1.8;
-    margin-top: 2.5rem;
     margin-bottom: .2rem;
 }
 
 .intro_textito{
-    font-size: 18px;
-    margin-top: 1rem;
+    font-size: 20px;
+    margin-top: .5rem;
     margin-bottom: 0;
 }
 
-.intro_text_container{
+.intro_container{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 .imgg{
@@ -47,37 +52,58 @@
     border-radius: 50%;
 }
 
+@media only screen and (min-width: 590px) and (max-width: 1023px) {
+    .intro_textito{
+         margin-top: 2rem;
+         margin-left: 6rem;
+         margin-right: 6rem;
+    }
+
+    .img_container{
+        margin-top: 2rem;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .intro_textito{
-         margin-top: 6rem;
+         margin-top: 2rem;
     }
 }
 
 @media (min-width: 1024px) {
+
+.texts_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    
+}
+
 .intro_container{
     display: flex;
     flex-direction: row;
-    width: 60%;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 80%;
 }
 
 .img_container{
     margin-left: 1rem;
     align-self: normal;
+    flex-direction: row;
+    margin-top: 2rem;
 }
 
-.intro_text_container{
-    text-align: start;
-}
 .intro_textito{
-    font-size: 21px;
-    margin-top: 2rem;
+    font-size: 24px;
+    margin-top: 0rem;
 }
 
 .welcome_message{
     font-size: 38px;
     margin-top: 0;
+    margin-right: auto;
+    margin-bottom: .2rem;
 }
 
 .img_container{

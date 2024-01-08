@@ -109,18 +109,12 @@
      padding: 1rem;
     }
 
-    .aboutme_intro{
+    .aboutme_intro, .tech_texts{
         font-size: 18px;
     }
 
-    .tech_texts{
-        font-size: 18px;
-    }
-    .education_texts{
+    .education_texts, .icons_text{
         font-size: 16px;
     }
 
-    .icons_text{
-        font-size: 16px;
-    }
   }
