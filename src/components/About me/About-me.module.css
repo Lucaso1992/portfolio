@@ -1,15 +1,3 @@
-/* @media screen and (min-width: 320px) and (max-width: 1024px) {
-    
-    .about_div{
-        min-height: auto;
-    }
-    .about_container{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-    }
-  } */
-
 .about_div{
     height: 100vh;
     background-color: #0d1117;
@@ -23,6 +11,7 @@
     width: 70%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .first_div{
@@ -38,7 +27,6 @@
     display: flex;
     flex-direction: column;
     color: whitesmoke;
-    margin-left: 3rem;
     font-size: 21px;
     justify-content: space-around;
 }
@@ -60,7 +48,7 @@
     border: 1.5px solid whitesmoke;
     border-radius: 12px;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .tech_texts{
@@ -84,6 +72,7 @@
     font-size: 18px;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 0;
+    margin-top: .2rem;
 }
 
 .aboutme_intro{
@@ -115,5 +104,23 @@
     .about_titles_icons{
         text-align: start;
         margin-top: 2rem;
+    }
+    .tech_container{
+     padding: 1rem;
+    }
+
+    .aboutme_intro{
+        font-size: 18px;
+    }
+
+    .tech_texts{
+        font-size: 18px;
+    }
+    .education_texts{
+        font-size: 16px;
+    }
+
+    .icons_text{
+        font-size: 16px;
     }
   }

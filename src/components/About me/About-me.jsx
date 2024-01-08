@@ -26,7 +26,7 @@ const AboutMe = () => {
 
 
   const opacityDesktop = useTransform(scrollYProgress, [0.35, 0.5, 0.7], [0, 1, 0]);
-  const opacityMobile = useTransform(scrollYProgress, [0.35, 0.5, 0.7], [0, 1, 0], {
+  const opacityMobile = useTransform(scrollYProgress, [0.35, 0.5, 0.9], [0, 1, 0], {
     clamp: false,
   });
 
