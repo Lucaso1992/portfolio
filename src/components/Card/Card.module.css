@@ -18,7 +18,7 @@
 .flip_card_front{
     width: 100%;
     height: 100%;
-    box-shadow: 3px 3px 6px #ff0000aa;;
+    box-shadow: 3px 3px 6px #ff0000aa;
     background: linear-gradient(to bottom, #010409, rgba(1, 4, 9, 0.945));
     border-radius: 6px;
     display: flex;
