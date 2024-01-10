@@ -31,7 +31,7 @@ const Portfolio = () => {
     </h2>
     <div className={styles.works_logo_container} data-aos="fade-up" data-aos-duration="1000">
       {worksData.map((work) => (
-        <Card
+        <Card 
           technologies={work.technologies}
           containerName={work.containerName}
           key={work.key}
