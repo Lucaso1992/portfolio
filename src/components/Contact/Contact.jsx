@@ -46,8 +46,8 @@ const Contact = () => {
 
   return (
     <motion.section id="contact" style={{ opacity }} ref={{ targetRef }} className={styles.contact_div}>
-      <h2 className={styles.contact_title}><strong>Contact</strong></h2>
-      <div className={styles.contact_container}>
+      <h2 className={styles.contact_title} data-aos="fade-up" data-aos-duration="1000"><strong>Contact</strong></h2>
+      <div className={styles.contact_container} data-aos="fade-up" data-aos-duration="1000">
         <div className={styles.my_info}>
           <p className={styles.contact_myname}><strong>Lucas Solari</strong></p>
           <Link to={"https://api.whatsapp.com/send?phone=34617272872"} className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaPhone className={styles.icons} /><p className={styles.icons_text}>(+34) 617 272 872</p></div></Link>

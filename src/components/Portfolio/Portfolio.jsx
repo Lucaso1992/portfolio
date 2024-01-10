@@ -26,10 +26,10 @@ const Portfolio = () => {
 
   return (
 <motion.section style={{ opacity }} ref={{targetRef}} className={styles.portfolio_container}>
-    <h2 id="portfolio" className={styles.portfolio_title}>
+    <h2 id="portfolio" data-aos="fade-up" data-aos-duration="1000" className={styles.portfolio_title} >
       <strong>MY WORKS</strong>
     </h2>
-    <div className={styles.works_logo_container}>
+    <div className={styles.works_logo_container} data-aos="fade-up" data-aos-duration="1000">
       {worksData.map((work) => (
         <Card
           technologies={work.technologies}

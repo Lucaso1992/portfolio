@@ -33,7 +33,7 @@ const AboutMe = () => {
   const opacity = store.isSmallScreen ? opacityMobile : opacityDesktop;
   return (
     <motion.section id="about" style={{ opacity }} ref={{ targetRef }} className={styles.about_div}>
-      <div className={styles.about_container}>
+      <div className={styles.about_container} data-aos="fade-up" data-aos-duration="1000">
         <div className={styles.first_div}>
           <h2 className={styles.about_titles}><strong>About me</strong></h2>
           <p className={styles.aboutme_intro}>Passionate Front-End Developer. Raised in a generation surrounded by the expansion of the Internet, I became curious about coding, so I started my research with tutorials and the vast amount of free materials available on the web. In 2023, I made the decision to formalize my studies. Always striving to deliver more than expected, I appreciate the world of development and coding for its challenges and continuous growth. Take a look at my skills.</p>

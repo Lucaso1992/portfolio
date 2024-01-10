@@ -1,4 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import useAppContext from './store/AppContext.jsx'
 
@@ -10,6 +12,8 @@ import AboutMe from './components/About me/About-me.jsx'
 import Contact from './components/Contact/Contact.jsx'
 
 import './App.css'
+
+AOS.init();
 
 function App() {
   const { store } = useAppContext();
