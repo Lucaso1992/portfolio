@@ -50,8 +50,8 @@ const Contact = () => {
       <div className={styles.contact_container} data-aos="fade-up" data-aos-duration="1000">
         <div className={styles.my_info}>
           <p className={styles.contact_myname}><strong>Lucas Solari</strong></p>
-          <Link to={"https://api.whatsapp.com/send?phone=34617272872"} className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaPhone className={styles.icons} /><p className={styles.icons_text}>(+34) 617 272 872</p></div></Link>
-          <Link to={"mailto:solarilucas92@gmail.com"} className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><MdEmail className={styles.icons} /><p className={styles.icons_text}>solarilucas92@gmail.com</p></div></Link>
+          <Link to={"https://api.whatsapp.com/send?phone=34617272872"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaPhone className={styles.icons} /><p className={styles.icons_text}>(+34) 617 272 872</p></div></Link>
+          <Link to={"mailto:solarilucas92@gmail.com"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><MdEmail className={styles.icons} /><p className={styles.icons_text}>solarilucas92@gmail.com</p></div></Link>
           <Link to={"https://github.com/Lucaso1992"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaGithub className={styles.icons} /><p className={styles.icons_text}>github.com/Lucaso1992</p></div></Link>
           <Link to={"https://www.linkedin.com/in/lucas-solari/"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaLinkedin className={styles.icons} /><p className={styles.icons_text}>linkedin.com/in/lucas-solari</p></div></Link>
         </div>
