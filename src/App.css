@@ -15,9 +15,15 @@ body {
     padding-bottom: 3rem;
 }
 
-#home,
-#portfolio,
-#productos,
-#contacto {
-  scroll-margin-top: 12rem;
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  #portfolio, #contact{
+    scroll-margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #portfolio{
+    scroll-margin-top: 12rem;
+  }
 }

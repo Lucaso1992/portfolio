@@ -38,7 +38,7 @@ const Contact = () => {
       .then((result) => {
         console.log(result.text);
         form.current.reset();
-        alert("Message sent correctly! thanks ;)");
+        alert("Message sent correctly! thanks :)");
       }, (error) => {
         console.log(error.text);
       });
