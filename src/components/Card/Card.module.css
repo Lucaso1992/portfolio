@@ -27,11 +27,12 @@
     transition: box-shadow 0.3s ease;
     transition: box-shadow 0.3s ease;
     border: 1.5px solid rgba(255, 255, 255, 0.463);
-
+    transition: transform 0.3s ease-in-out;
 }
 
 .flip_card_front:hover{
     box-shadow: 0 0 12px #FF0000;
+    transform: scale(1.05); 
 }
 
 .flip_card_front:hover .work_title{
