@@ -19,7 +19,7 @@ const Card = ({ technologies, containerName, key, img, description, title, githu
   }
 
   return (
-    <div className={styles.flip_card}>
+    <div className={styles.flip_card} key={key}>
       <motion.div className={styles.flip_card_inner} initial={false}
         animate={{ rotateY: isFlipped ? 180 : 360 }}
         transition={{ duration: 0.6, animationDirection: "normal" }}
