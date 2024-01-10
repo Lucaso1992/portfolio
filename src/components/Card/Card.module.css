@@ -31,7 +31,7 @@
 }
 
 .flip_card_front:hover{
-    box-shadow: 0 0 12px #FF0000;;
+    box-shadow: 0 0 12px #FF0000;
 }
 
 .flip_card_front:hover .work_title{

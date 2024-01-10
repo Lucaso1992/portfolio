@@ -1,5 +1,5 @@
-.contact_container{
-    height: 100vh;
+.contact_div{
+    height: 90vh;
     background-color: whitesmoke;
     display: flex;
     width: 100%;
@@ -10,4 +10,30 @@
 
 .contact_title{
     color: #0d1117;
+    font-size: 38px;
+    margin-bottom: 1.5rem;
+}
+
+.contact_container{
+    display: flex;
+    flex-direction: row;
+    background-color: #0d1117;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    width: 60%;
+    min-height: 400px;
+    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 12px #FF0000;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.my_info{
+    display: flex;
+    flex-direction: column;
 }
