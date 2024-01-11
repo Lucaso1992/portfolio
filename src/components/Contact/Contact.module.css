@@ -32,14 +32,14 @@
 .form{
     display: flex;
     flex-direction: column;
-    gap: 1.7rem;
+    gap: 1.5rem;
     width: 35%;
 }
 
 .my_info{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .icons_conteiner{
@@ -157,12 +157,18 @@
     .contact_title{
         font-size: 62px;
     }
+    .form{
+        margin-top: 1.8rem;
+    }
   }
 
   @media (min-width: 1370px){
     .contact_title{
         font-size: 66px;
 
+    }
+    .form{
+        margin-top: 1.8rem;
     }
 
   }
