@@ -4,16 +4,21 @@ import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 
 import useAppContext from "../../store/AppContext";
-import { IoPerson } from "react-icons/io5";
+
+import cv from "../../assets/cv.pdf"
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { IoMdDownload } from "react-icons/io";
+
+
 
 import styles from "./Contact.module.css";
 
 const Contact = () => {
   const { store } = useAppContext();
+  const curriculum = cv
   const targetRef = useRef < HTMLDivElement > (null);
 
   const { scrollYProgress } = useScroll({
@@ -54,7 +59,9 @@ const Contact = () => {
           <Link to={"mailto:solarilucas92@gmail.com"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><MdEmail className={styles.icons} /><p className={styles.icons_text}>solarilucas92@gmail.com</p></div></Link>
           <Link to={"https://github.com/Lucaso1992"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaGithub className={styles.icons} /><p className={styles.icons_text}>github.com/Lucaso1992</p></div></Link>
           <Link to={"https://www.linkedin.com/in/lucas-solari/"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaLinkedin className={styles.icons} /><p className={styles.icons_text}>linkedin.com/in/lucas-solari</p></div></Link>
+          <Link to={curriculum} download="cv.pdf" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><IoMdDownload  className={styles.icons} /><p className={styles.icons_text}>Download CV</p></div></Link>
         </div>
+
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
           <input type="text" name="user_name" className={styles.input_holder} required placeholder="Name" />
           <input type="email" name="user_email" className={styles.input_holder} required placeholder="Email" />
