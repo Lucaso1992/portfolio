@@ -59,7 +59,7 @@ const Contact = () => {
           <Link to={"mailto:solarilucas92@gmail.com"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><MdEmail className={styles.icons} /><p className={styles.icons_text}>solarilucas92@gmail.com</p></div></Link>
           <Link to={"https://github.com/Lucaso1992"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaGithub className={styles.icons} /><p className={styles.icons_text}>github.com/Lucaso1992</p></div></Link>
           <Link to={"https://www.linkedin.com/in/lucas-solari/"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaLinkedin className={styles.icons} /><p className={styles.icons_text}>linkedin.com/in/lucas-solari</p></div></Link>
-          <Link to={curriculum} download="cv.pdf" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><IoMdDownload  className={styles.icons} /><p className={styles.icons_text}>Download CV</p></div></Link>
+          <a href={curriculum} download="cv.pdf" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><IoMdDownload  className={styles.icons} /><p className={styles.icons_text}>Download CV</p></div></a>
         </div>
 
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
