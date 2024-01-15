@@ -14,7 +14,7 @@ const worksData = [
     key: 'wecontain',
     title: "WE CONTAIN",
     img: img2,
-    description: "Design and development of a corporate website for a container rental company in Buenos Aires, Argentina. Using React, JavaScript, Bootstrap, SASS, HTML, CSS and Figma.",
+    description: "Design and development of a landing page for a container rental company in Buenos Aires, Argentina. Using React, JavaScript, Bootstrap, SASS, HTML, CSS and Figma.",
     containerName: "wecontain_container",
     web: "https://www.wecontain.com.ar/",
     github: "https://github.com/Lucaso1992/we-contain",
