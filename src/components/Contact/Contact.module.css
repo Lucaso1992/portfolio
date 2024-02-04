@@ -157,10 +157,7 @@
     }
   }
 
-  @media screen and (min-width: 200px) and (max-width: 320px) {
-    /* .icons_text{
-        margin-left: .5rem;
-    } */
+  @media screen and (min-width: 200px) and (max-width: 380px) {
     .contact_container{
         padding: 0;
         padding-bottom: 2rem;
