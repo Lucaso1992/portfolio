@@ -4,7 +4,7 @@ import useAppContext from "../../store/AppContext";
 
 import styles from "./Introduction.module.css";
 
-import img from "../../assets/profile-img.jpg"
+import img from "https://i.ibb.co/8r5jjWD/chauqe.jpg"
 
 const Introduction = () => {
   const { store } = useAppContext();
