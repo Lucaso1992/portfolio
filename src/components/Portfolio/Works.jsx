@@ -2,6 +2,7 @@ import img1 from "../../assets/star-wars.png";
 import img2 from "../../assets/we-contain.png";
 import img3 from "../../assets/cosmos.png";
 import img4 from "../../assets/agenda.png";
+import img5 from "../../assets/el-redoble-2.png";
 
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -10,6 +11,17 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { FaHtml5 } from "react-icons/fa";
 
 const worksData = [
+  {
+    key: 'haras',
+    title: "EL REDOBLE HARAS",
+    img: img5,
+    description: "Design and Front-End development. Linked to an external database featuring client's products. The seamless integration with the external database showcases my practical approach and effective solutions.",
+    containerName: "haras",
+    web: "https://www.haraselredoble.com/",
+    github: "https://github.com/Lucaso1992/haras-el-redoble",
+    backtext: "",
+    technologies: [<FaReact />, <IoLogoJavascript/>, <FaBootstrap />, <FaCss3Alt />, <FaHtml5 />] 
+  },
   {
     key: 'wecontain',
     title: "WE CONTAIN",

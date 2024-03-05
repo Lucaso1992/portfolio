@@ -51,11 +51,12 @@
   @media (min-width: 1370px) {    
     .portfolio_container{
         height: 100vh;
+        padding-bottom: 3rem;
     }
     .portfolio_title{
         width: 50%;
         border-bottom: .2rem solid #0d1117;
-        padding-top: 0;
+        padding-top: 7rem;
         padding-bottom: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
