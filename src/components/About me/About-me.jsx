@@ -11,6 +11,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
 import { SiFramer } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
 
 import styles from "./About-me.module.css";
 
@@ -83,8 +84,8 @@ const AboutMe = () => {
               </div>
 
               <div className="d-flex flex-column">
-                <FaBootstrap className={styles.about_icons} />
-                <p className={styles.icons_text}>Bootstrap</p>
+                <FaFigma className={styles.about_icons} />
+                <p className={styles.icons_text}>Figma</p>
               </div>
 
               <div className="d-flex flex-column">
