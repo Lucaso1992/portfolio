@@ -17,16 +17,17 @@ body {
 
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
-  #portfolio, #contact{
+  #contact{
     scroll-margin-top: 2rem;
+  }
+  #portfolio{
+    scroll-margin-top: 8rem;
   }
 }
 
 @media (min-width: 1024px) {
   #portfolio{
-    scroll-margin-top: 12rem;
+    scroll-margin-top: 4rem;
   }
 }
-#portfolio{
-  scroll-margin-top: 18rem;
-}
+
