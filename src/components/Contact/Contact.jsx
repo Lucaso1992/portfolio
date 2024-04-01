@@ -38,7 +38,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_svabuxs', 'template_mdpt49s', form.current, 'pY_4-aRSCLLG8DX0Z')
       .then((result) => {
         console.log(result.text);

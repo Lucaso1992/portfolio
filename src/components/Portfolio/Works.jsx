@@ -1,7 +1,7 @@
 import img1 from "../../assets/star-wars.png";
 import img2 from "../../assets/we-contain.png";
 import img3 from "../../assets/cosmos.png";
-import img4 from "../../assets/agenda.png";
+import img4 from "../../assets/agenda-2.png";
 import img5 from "../../assets/el-redoble-2.png";
 
 import { FaBootstrap } from "react-icons/fa";
