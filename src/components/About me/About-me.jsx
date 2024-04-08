@@ -12,6 +12,10 @@ import { FaGithub } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
 import { SiFramer } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
+import { FaPython } from "react-icons/fa6";
+import { SiFlask } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
 
 import styles from "./About-me.module.css";
 
@@ -36,7 +40,7 @@ const AboutMe = () => {
       <div className={styles.about_container}>
         <div className={styles.first_div}>
           <h2 className={styles.about_titles}><strong>About me</strong></h2>
-          <p className={styles.aboutme_intro}>Passionate Front-End Developer. Raised in a generation surrounded by the expansion of Internet, I became curious about coding, so I started my research with tutorials and the vast amount of free materials available on the web. In 2023, I made the decision to formalize my studies. Always striving to deliver more than expected, I appreciate the world of development and coding for its challenges and continuous growth. Take a look at my skills.</p>
+          <p className={styles.aboutme_intro}>Passionate Full Stack Developer. Raised in a generation surrounded by the expansion of Internet, I became curious about coding, so I started my research with tutorials and the vast amount of free materials available on the web. In 2023, I made the decision to formalize my studies. Always striving to deliver more than expected, I appreciate the world of development and coding for its challenges and continuous growth. Take a look at my skills.</p>
           <h2 className="mt-2"><strong>Education</strong></h2>
           <div className="d-flex flex-row align-items-center mt-2">
             <PiStudentFill className={styles.about_icons} />
@@ -53,26 +57,46 @@ const AboutMe = () => {
         <div className={styles.second_div}>
           <div>
             <h2 className={styles.about_titles_icons}><strong>Tech Stack</strong></h2>
-            <div className={styles.tech_container}>
-              <div className="d-flex flex-column">
-                <FaReact className={styles.about_icons} />
-                <p className={styles.icons_text}>React</p>
+            <div className={styles.tech_front_container}>
+              <div className={styles.front_container}>
+                <div className="d-flex flex-column">
+                  <FaReact className={styles.about_icons} />
+                  <p className={styles.icons_text}>React</p>
+                </div>
+                <div className="d-flex flex-column">
+                  <IoLogoJavascript className={styles.about_icons} />
+                  <p className={styles.icons_text}>JavaScript</p>
+                </div>
+
+                <div className="d-flex flex-column">
+                  <FaCss3Alt className={styles.about_icons} />
+                  <p className={styles.icons_text}>CSS</p>
+                </div>
+
+                <div className="d-flex flex-column">
+                  <FaHtml5 className={styles.about_icons} />
+                  <p className={styles.icons_text}>HTML</p>
+                </div>
+              </div>
+              <div className={styles.back_container}>
+                <div className="d-flex flex-column">
+                  <FaPython  className={styles.about_icons} />
+                  <p className={styles.icons_text}>Python</p>
+                </div>
+                <div className="d-flex flex-column">
+                  <SiFlask className={styles.about_icons} />
+                  <p className={styles.icons_text}>Flask</p>
+                </div>
+                <div className="d-flex flex-column">
+                  <SiMysql className={styles.about_icons} />
+                  <p className={styles.icons_text}>SQL</p>
+                </div>
+                <div className="d-flex flex-column">
+                  <SiPostgresql className={styles.about_icons} />
+                  <p className={styles.icons_text}>PostgreSql</p>
+                </div>
               </div>
 
-              <div className="d-flex flex-column">
-                <IoLogoJavascript className={styles.about_icons} />
-                <p className={styles.icons_text}>JavaScript</p>
-              </div>
-
-              <div className="d-flex flex-column">
-                <FaCss3Alt className={styles.about_icons} />
-                <p className={styles.icons_text}>CSS</p>
-              </div>
-
-              <div className="d-flex flex-column">
-                <FaHtml5 className={styles.about_icons} />
-                <p className={styles.icons_text}>HTML</p>
-              </div>
             </div>
           </div>
           <div>

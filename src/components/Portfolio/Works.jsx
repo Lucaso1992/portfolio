@@ -15,7 +15,7 @@ const worksData = [
     key: 'haras',
     title: "EL REDOBLE HARAS",
     img: img5,
-    description: "Design and development of a Horsebreeder & Stable website. Linked to an external database featuring client's products. The seamless integration with the external database showcases my practical approach and effective solutions.",
+    description: "Design and development of a Horsebreeder & Stable website. Linked to an external database featuring client's products. The seamless integration with the CMS database showcases my practical approach and effective solutions.",
     containerName: "haras",
     web: "https://www.haraselredoble.com/",
     github: "https://github.com/Lucaso1992/haras-el-redoble",

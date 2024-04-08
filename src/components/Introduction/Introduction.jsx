@@ -29,7 +29,7 @@ const Introduction = () => {
       <div className={styles.intro_container}>
         <div className={styles.texts_container}>
         <h2 className={styles.welcome_message}><mark className={styles.remarked}><strong>Hi there! Welcome</strong></mark></h2>
-        <p className={styles.intro_textito}>My name is <strong>Lucas Solari</strong>, I´m a Front-End Developer. Design and usability
+        <p className={styles.intro_textito}>My name is <strong>Lucas Solari</strong>, I´m a Junior Full Stack Developer. Design and usability
           enthusiast, I enjoy crafting high-quality web solutions and delivering outstanding user experiences.
           Have a look at my works and if you have any query, feel free to reach out!</p>
           </div>
