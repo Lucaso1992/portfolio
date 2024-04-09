@@ -93,7 +93,7 @@ const AboutMe = () => {
                 </div>
                 <div className="d-flex flex-column">
                   <SiPostgresql className={styles.about_icons} />
-                  <p className={styles.icons_text}>PostgreSql</p>
+                  <p className={styles.icons_text}>Postgre</p>
                 </div>
               </div>
 
