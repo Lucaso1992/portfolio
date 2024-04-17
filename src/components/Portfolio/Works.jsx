@@ -48,7 +48,7 @@ const worksData = [
     key: 'starwars',
     title: "STAR WARS BLOG",
     img: img1,
-    description: "Front-End development, connected with an external API. Allows to create a user with email and password, login and add favorite characters. Implementing access to dynamic routes and user authentication.",
+    description: "Front-End development, connected with external API. Allows to create a user with email and password, login and add favorite characters. Access to dynamic routes and user authentication with JSON Web Tokens.",
     containerName: "starwars_container",
     web: "https://star-wars-reloaded.vercel.app/",
     github: "https://github.com/Lucaso1992/star-wars-reloaded",
