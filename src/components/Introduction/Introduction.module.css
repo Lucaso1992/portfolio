@@ -49,7 +49,7 @@
     object-fit: cover;
     min-width: 100%;
     min-height: 100%;
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 590px) and (max-width: 1023px) {
