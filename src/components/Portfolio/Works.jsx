@@ -16,7 +16,7 @@ const worksData = [
     key: 'ecommerce',
     title: "LUCKY SHOP",
     img: img6,
-    description: "LUCKY SHOP is an e-commerce platform built with React, aimed at delivering a seamless shopping experience. Users can browse through the catalog, add items to their shopping cart, and seamlessly manage their selections. ",
+    description: "LUCKY SHOP is an e-commerce platform built with React, aimed to deliver a seamless shopping experience. Users can browse through the catalog, add items to their shopping cart, and manage their selections. ",
     containerName: "shop",
     web: "https://e-commerce-3a53.vercel.app/",
     github: "https://github.com/Lucaso1992/e-commerce",
