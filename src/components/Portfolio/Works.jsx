@@ -3,6 +3,7 @@ import img2 from "../../assets/we-contain.png";
 import img3 from "../../assets/cosmos.png";
 import img4 from "../../assets/agenda-2.png";
 import img5 from "../../assets/el-redoble-2.png";
+import img6 from "../../assets/shop.png";
 
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -11,6 +12,17 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { FaHtml5 } from "react-icons/fa";
 
 const worksData = [
+  {
+    key: 'ecommerce',
+    title: "LUCKY SHOP",
+    img: img6,
+    description: "LUCKY SHOP is an e-commerce platform built with React, aimed at delivering a seamless shopping experience. Users can browse through the catalog, add items to their shopping cart, and seamlessly manage their selections. ",
+    containerName: "shop",
+    web: "https://e-commerce-3a53.vercel.app/",
+    github: "https://github.com/Lucaso1992/e-commerce",
+    backtext: "",
+    technologies: [<FaReact />, <IoLogoJavascript/>, <FaBootstrap />, <FaCss3Alt />, <FaHtml5 />] 
+  },
   {
     key: 'haras',
     title: "EL REDOBLE HARAS",
