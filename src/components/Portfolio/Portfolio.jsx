@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 import Card from "../Card/Card";
 import useAppContext from "../../store/AppContext";
@@ -10,9 +10,23 @@ import styles from "./Portfolio.module.css";
 const Portfolio = () => {
   const { store } = useAppContext();
   const [t] = useTranslation('global');
+  const targetRef = useRef < HTMLDivElement > (null);
+
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start start", "end start"],
+  });
+
+
+  const opacityDesktop = useTransform(scrollYProgress, [0.1, 0.24, 0.5], [0, 1, 0]);
+  const opacityMobile = useTransform(scrollYProgress, [0, 0.13], [0, 1], {
+    clamp: false,
+  });
+
+  const opacity = store.isSmallScreen ? opacityMobile : opacityDesktop;
 
   return (
-    <motion.section className={styles.portfolio_container}>
+    <motion.section style={{ opacity }} ref={{ targetRef }} className={styles.portfolio_container}>
       <h2 id="portfolio" data-aos="fade-up" data-aos-duration="1000" className={styles.portfolio_title}>
         <strong>{t('works.title')}</strong>
       </h2>
