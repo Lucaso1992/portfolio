@@ -1,14 +1,14 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import useAppContext from "../../store/AppContext";
-
+import { useTranslation } from 'react-i18next';
 import styles from "./Introduction.module.css";
-
 import img from "../../assets/profile-img.jpg"
 
 const Introduction = () => {
   const { store } = useAppContext();
   const targetRef = useRef < HTMLDivElement > (null);
+  const [t] = useTranslation('global');
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -28,10 +28,8 @@ const Introduction = () => {
     <motion.section style={{ opacity }} ref={{ targetRef }} className={styles.intro_div}>
       <div className={styles.intro_container}>
         <div className={styles.texts_container}>
-        <h2 className={styles.welcome_message}><mark className={styles.remarked}><strong>Hi there! Welcome</strong></mark></h2>
-        <p className={styles.intro_textito}>My name is <strong>Lucas Solari</strong>, I´m a Junior Full Stack Developer. Design and usability
-          enthusiast, I enjoy crafting high-quality web solutions and delivering outstanding user experiences.
-          Have a look at my works and if you have any query, feel free to reach out!</p>
+        <h2 className={styles.welcome_message}><mark className={styles.remarked}><strong>{t('introduction.title')}</strong></mark></h2>
+        <p className={styles.intro_textito}>{t('introduction.text-1')} <strong>Lucas Solari</strong>, {t('introduction.text')}</p>
           </div>
         <div className={styles.img_container}>
           <img className={`${styles.imgg}  object-fit-cover w-100 h-100`} src={img} alt="" />

@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 import useAppContext from "../../store/AppContext";
 import { PiStudentFill } from "react-icons/pi";
@@ -22,6 +23,7 @@ import styles from "./About-me.module.css";
 const AboutMe = () => {
   const { store } = useAppContext();
   const targetRef = useRef < HTMLDivElement > (null);
+  const [t] = useTranslation('global');
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -39,9 +41,9 @@ const AboutMe = () => {
     <motion.section id="about" style={{ opacity }} ref={{ targetRef }} className={styles.about_div}>
       <div className={styles.about_container}>
         <div className={styles.first_div}>
-          <h2 className={styles.about_titles}><strong>About me</strong></h2>
-          <p className={styles.aboutme_intro}>Passionate Full Stack Developer. Raised in a generation surrounded by the expansion of Internet, I became curious about coding, so I started my research with tutorials and the vast amount of free materials available on the web. In 2023, I made the decision to formalize my studies. Always striving to deliver more than expected, I appreciate the world of development and coding for its challenges and continuous growth. Actually I am working as Teacher Assistant at 4Geeks Academy. Take a look at my skills.</p>
-          <h2 className="mt-2"><strong>Education</strong></h2>
+          <h2 className={styles.about_titles}><strong>{t('about_me.about')}</strong></h2>
+          <p className={styles.aboutme_intro}>{t('about_me.intro')}</p>
+          <h2 className="mt-2"><strong>{t('about_me.education')}</strong></h2>
           <div className="d-flex flex-row align-items-center mt-2">
             <PiStudentFill className={styles.about_icons} />
             <p className={`${styles.tech_texts} ms-3`}>Full Stack Developer</p>

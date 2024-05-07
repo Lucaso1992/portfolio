@@ -7,6 +7,10 @@
     transition: box-shadow 0.3s ease-in-out;
 } 
 
+.toggler{
+    margin-left: auto;
+}
+
 .nav_items {
     font-size: 16px;
     text-decoration: none;

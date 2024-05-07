@@ -1,11 +1,10 @@
-import { useState } from "react"
-import { motion } from "framer-motion"
+import { useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
 import { FaPlus } from "react-icons/fa6";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-import styles from "./Card.module.css"
+import styles from "./Card.module.css";
 
 const Card = ({ technologies, containerName, key, img, description, title, github, web }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -14,9 +13,9 @@ const Card = ({ technologies, containerName, key, img, description, title, githu
   const handleFlip = () => {
     if (!isAnimating) {
       setIsFlipped(!isFlipped);
-      setIsAnimating(true)
+      setIsAnimating(true);
     }
-  }
+  };
 
   return (
     <div className={styles.flip_card} key={key}>
@@ -27,11 +26,11 @@ const Card = ({ technologies, containerName, key, img, description, title, githu
 
         <div className={styles.flip_card_front}>
           <div className={styles.links_div}>
-          <FaPlus className={styles.plus} onClick={handleFlip} />
-          <Link to={github} target="_blank" className={styles.button_github}>
+            <FaPlus className={styles.plus} onClick={handleFlip} />
+            <Link to={github} target="_blank" className={styles.button_github}>
               <FaGithub />
             </Link>
-          <Link to={web} target="_blank" ><FaExternalLinkAlt className={styles.button_web}/></Link>
+            <Link to={web} target="_blank" ><FaExternalLinkAlt className={styles.button_web}/></Link>
           </div>
           <div className={styles[containerName]}>
             <Link to={web} target="_blank"><img src={img} className={styles.img_logo} alt={key}/></Link>
@@ -47,7 +46,7 @@ const Card = ({ technologies, containerName, key, img, description, title, githu
         </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
 export default Card;

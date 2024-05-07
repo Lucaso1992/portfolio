@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 import useAppContext from "../../store/AppContext";
 
@@ -13,13 +14,13 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 
 
-
 import styles from "./Contact.module.css";
 
 const Contact = () => {
   const { store } = useAppContext();
   const curriculum = cv
   const targetRef = useRef < HTMLDivElement > (null);
+  const [t] = useTranslation('global');
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -50,7 +51,7 @@ const Contact = () => {
 
   return (
     <motion.section id="contact" style={{ opacity }} ref={{ targetRef }} className={styles.contact_div}>
-      <h2 className={styles.contact_title} data-aos="fade-up" data-aos-duration="1000"><strong>Contact</strong></h2>
+      <h2 className={styles.contact_title} data-aos="fade-up" data-aos-duration="1000"><strong>{t('contact.title')}</strong></h2>
       <div className={styles.contact_container} data-aos="fade-up" data-aos-duration="1000">
         <div className={styles.my_info}>
           <p className={styles.contact_myname}><strong>Lucas Solari</strong></p>
@@ -58,14 +59,14 @@ const Contact = () => {
           <Link to={"mailto:solarilucas92@gmail.com"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><MdEmail className={styles.icons} /><p className={styles.icons_text}>solarilucas92@gmail.com</p></div></Link>
           <Link to={"https://github.com/Lucaso1992"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaGithub className={styles.icons} /><p className={styles.icons_text}>github.com/Lucaso1992</p></div></Link>
           <Link to={"https://www.linkedin.com/in/lucas-solari/"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaLinkedin className={styles.icons} /><p className={styles.icons_text}>linkedin.com/in/lucas-solari</p></div></Link>
-          <a href={curriculum} download="lucas-solari.pdf" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><IoMdDownload  className={styles.icons} /><p className={styles.icons_text}>Download CV</p></div></a>
+          <a href={curriculum} download="lucas-solari.pdf" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><IoMdDownload  className={styles.icons} /><p className={styles.icons_text}>{t('contact.download')}</p></div></a>
         </div>
 
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
-          <input type="text" name="user_name" className={styles.input_holder} required placeholder="Name" />
-          <input type="email" name="user_email" className={styles.input_holder} required placeholder="Email" />
-          <textarea name="message" className={styles.message_holder} required placeholder="Message" />
-          <input type="submit" className={styles.send_button} value="Send" />
+          <input type="text" name="user_name" className={styles.input_holder} required placeholder={t('contact.name')} />
+          <input type="email" name="user_email" className={styles.input_holder} required placeholder={t('contact.email')} />
+          <textarea name="message" className={styles.message_holder} required placeholder={t('contact.message')} />
+          <input type="submit" className={styles.send_button} value={t('contact.send')} />
         </form>
       </div>
     </motion.section>

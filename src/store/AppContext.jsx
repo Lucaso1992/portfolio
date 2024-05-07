@@ -3,6 +3,7 @@ import { useContext, createContext, useState, useEffect } from "react";
 const AppContext = createContext();
 
 export const AppProvider = ({children}) => {
+    const [english, setEnglish] = useState(true);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
     const sectionColors = [
@@ -49,10 +50,11 @@ export const AppProvider = ({children}) => {
         fetchMediaQuery();
       }, []);
 
-    const store = {isSmallScreen, isScrolled, sectionColors};
+    const store = {isSmallScreen, isScrolled, sectionColors, english};
+    const actions = {setEnglish};
 
     return(
-        <AppContext.Provider value={{store}}>
+        <AppContext.Provider value={{store, actions}}>
             {children}
         </AppContext.Provider>
     )

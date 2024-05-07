@@ -1,0 +1,29 @@
+{
+    "navbar": {
+        "one": "Home",
+        "two": "Portfolio",
+        "three": "About me",
+        "four": "Contact"
+    },
+    "introduction": {
+        "title": "Hi there! Welcome",
+        "text-1": "My name is",
+        "text": "I´m a Junior Full Stack Developer. Design and usability enthusiast, I enjoy crafting high-quality web solutions and delivering outstanding user experiences. Have a look at my works and if you have any query, feel free to reach out!"
+    },
+    "works": {
+        "title": "MY WORKS"
+    },
+    "about_me": {
+        "about": "About me",
+        "intro": "Passionate Full Stack Developer. Raised in a generation surrounded by the expansion of Internet, I became curious about coding, so I started my research with tutorials and the vast amount of free materials available on the web. In 2023, I made the decision to formalize my studies. Always striving to deliver more than expected, I appreciate the world of development and coding for its challenges and continuous growth. Actually I am working as Teacher Assistant at 4Geeks Academy. Take a look at my skills.",
+        "education": "Education"
+    },
+    "contact": {
+        "title": "Contact",
+        "download": "Download CV",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send"
+    }
+}
