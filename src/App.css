@@ -27,7 +27,7 @@ body {
 
 @media (min-width: 1024px) {
   #portfolio{
-    scroll-margin-top: 8rem;
+    scroll-margin-top: 10rem;
   }
 }
 
