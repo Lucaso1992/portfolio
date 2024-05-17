@@ -3,7 +3,7 @@ import img2 from "../../assets/we-contain.png";
 import img3 from "../../assets/cosmos.png";
 import img4 from "../../assets/agenda-2.png";
 import img5 from "../../assets/el-redoble-2.png";
-import img6 from "../../assets/shop.png";
+import img6 from "../../assets/shop.jpeg";
 
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
