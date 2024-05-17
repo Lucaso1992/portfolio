@@ -15,7 +15,7 @@
 }
 
 .works_logo_container{
-    width: 80%;
+    width: 100%;
     padding: 3rem;
     border-radius: 10px;
     display: flex;
@@ -38,13 +38,14 @@
         padding-bottom: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-top: 0;
+        padding-top: 5rem;
         margin-bottom: 3rem;
         font-size: 62px;
         font-family: 'Bebas Neue', sans-serif;
     }
     .portfolio_container{
-        height: 100vh;
+        height: auto;
+        padding-bottom: 5rem;
     }
   }
 
@@ -56,7 +57,7 @@
     .portfolio_title{
         width: 50%;
         border-bottom: .2rem solid #0d1117;
-        padding-top: 7rem;
+        padding-top: 5rem;
         padding-bottom: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
