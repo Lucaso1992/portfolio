@@ -27,14 +27,15 @@ const Introduction = () => {
 
     <motion.section style={{ opacity }} ref={{ targetRef }} className={styles.intro_div}>
       <div className={styles.intro_container}>
-        <div data-aos="fade-right" data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000" className={styles.texts_container}>
-          <h2 className={styles.welcome_message}><mark className={styles.remarked}><strong>{t('introduction.title')}</strong></mark></h2>
-          <p className={styles.intro_textito}>{t('introduction.text-1')} <strong>Lucas Solari</strong>, {t('introduction.text')}</p>
+        <div  className={styles.texts_container}>
+          <h2 data-aos="fade-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500" className={styles.welcome_message}><mark className={styles.remarked}><strong>{t('introduction.title')}</strong></mark></h2>
+          <p data-aos="fade-right" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500" className={styles.intro_textito}>{t('introduction.text-1')} <strong>Lucas Solari</strong>, {t('introduction.text')}</p>
         </div>
         <div data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000"className={styles.img_container}>
+     data-aos-duration="1500"className={styles.img_container}>
           <img className={`${styles.imgg}  object-fit-cover w-100 h-100`} src={img} alt="" />
         </div>
       </div>
