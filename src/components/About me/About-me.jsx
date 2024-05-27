@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 
 import useAppContext from "../../store/AppContext";
 import { PiStudentFill } from "react-icons/pi";
-import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa6";

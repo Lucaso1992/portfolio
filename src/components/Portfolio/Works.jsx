@@ -10,6 +10,9 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa6";
 import { FaHtml5 } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { SiFlask } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
 
 
 const worksData = [
@@ -59,7 +62,7 @@ const worksData = [
     web: "https://cosmos-app-1234.onrender.com/",
     github: "https://github.com/Lucaso1992/cosmos-date-app",
     backtext: "",
-    technologies: [<FaReact />, <IoLogoJavascript/>, <FaBootstrap />, <FaCss3Alt />, <FaHtml5 />]
+    technologies: [<FaReact />, <IoLogoJavascript/>, <FaPython />, <SiFlask />, <SiMysql />]
   },
   {
     key: 'starwars',
