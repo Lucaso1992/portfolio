@@ -61,12 +61,12 @@ const AboutMe = () => {
             <div className={styles.tech_front_container}>
               <div className={styles.front_container}>
                 <div className="d-flex flex-column">
-                  <FaReact className={styles.about_icons} />
-                  <p className={styles.icons_text}>React</p>
+                <IoLogoJavascript className={styles.about_icons} />
+                  <p className={styles.icons_text}>JavaScript</p>
                 </div>
                 <div className="d-flex flex-column">
-                  <IoLogoJavascript className={styles.about_icons} />
-                  <p className={styles.icons_text}>JavaScript</p>
+                  <FaReact className={styles.about_icons} />
+                  <p className={styles.icons_text}>React</p>
                 </div>
 
                 <div className="d-flex flex-column">
