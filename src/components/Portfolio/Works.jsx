@@ -35,7 +35,7 @@ const worksData = [
     description: "Design and development of a Horsebreeder & Stable website. Linked to an external database featuring client's products. The seamless integration with the CMS database showcases my practical approach and effective solutions.",
     description_espanol: "Diseño y desarrollo de un sitio web de un criadero de caballos de salto. Vinculado a una API externa, muestra los caballos disponibles del cliente. La integración con la base de datos muestra mi enfoque práctico y soluciones efectivas.",
     containerName: "haras",
-    web: "https://www.haraselredoble.com/",
+    web: "https://haras-el-redoble-4qj7.vercel.app/",
     github: "https://github.com/Lucaso1992/haras-el-redoble",
     backtext: "",
     technologies: [<FaReact />, <IoLogoJavascript/>, <FaBootstrap />, <FaCss3Alt />, <FaHtml5 />] 
