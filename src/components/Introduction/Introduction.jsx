@@ -28,9 +28,9 @@ const Introduction = () => {
     <motion.section style={{ opacity }} ref={{ targetRef }} className={styles.intro_div}>
       <div className={styles.intro_container}>
         <div className={styles.texts_container}>
-          <h2 data-aos="fade-left" data-aos-easing="ease-out-cubic"
+          <h2 data-aos="fade-up" data-aos-easing="ease-out-cubic"
             data-aos-duration="1100" className={styles.welcome_message}><mark className={styles.remarked}><strong>{t('introduction.title')}</strong></mark></h2>
-          <p data-aos="fade-right" data-aos-easing="ease-out-cubic"
+          <p data-aos="fade-up" data-aos-easing="ease-out-cubic"
             data-aos-duration="1100" className={styles.intro_textito}>{t('introduction.text-1')} <strong>Lucas Solari</strong>, {t('introduction.text')}</p>
         </div>
         <div data-aos="fade-up"
