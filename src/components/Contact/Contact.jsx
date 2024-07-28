@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 import useAppContext from "../../store/AppContext";
 
-import cv from "../../assets/lucas-solari.pdf"
+import cv from "../../assets/cv-lucas-solari.pdf"
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
