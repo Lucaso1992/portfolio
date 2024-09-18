@@ -21,7 +21,7 @@ const worksData = [
     title: "LUCKY SHOP",
     img: img6,
     description: "LUCKY SHOP is an e-commerce platform built with React, aimed to deliver a seamless shopping experience. Users can browse through the catalog, filter prices and categorys, and add items to their shopping cart,  managing their selections.",
-    description_espanol: "LUCKY SHOP es un e-commerce construido con React, con el objetivo de brindar una experiencia de compra fluida. Los usuarios pueden navegar por el catálogo, filtrar por precio y categoría y agregar productos al carrito de compras, gestionando sus selecciones.",
+    description_espanol: "LUCKY SHOP es un e-commerce que brinda una experiencia de compra fluida. Los usuarios pueden gestionar sus selecciones navegando por el catálogo, filtrando por precio y categoría y agregando productos al carrito de compras.",
     containerName: "shop",
     web: "https://e-commerce-3a53.vercel.app/",
     github: "https://github.com/Lucaso1992/e-commerce",
