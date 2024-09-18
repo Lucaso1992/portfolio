@@ -1,9 +1,9 @@
-import img1 from "../../assets/star-wars.png";
+import img1 from "../../assets/star-wars.webp";
 import img2 from "../../assets/we-contain.png";
-import img3 from "../../assets/cosmos.png";
-import img4 from "../../assets/agenda-2.png";
-import img5 from "../../assets/el-redoble-2.png";
-import img6 from "../../assets/shop.jpeg";
+import img3 from "../../assets/cosmos.webp";
+import img4 from "../../assets/agenda-2.webp";
+import img5 from "../../assets/el-redoble-2.webp";
+import img6 from "../../assets/shop.webp";
 
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";

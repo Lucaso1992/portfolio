@@ -3,7 +3,7 @@ import { useRef } from "react";
 import useAppContext from "../../store/AppContext";
 import { useTranslation } from 'react-i18next';
 import styles from "./Introduction.module.css";
-import img from "../../assets/profile-img.jpg"
+import img from "../../assets/profile-img.webp"
 
 const Introduction = () => {
   const { store } = useAppContext();
