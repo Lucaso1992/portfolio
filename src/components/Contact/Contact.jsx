@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 import useAppContext from "../../store/AppContext";
 
-import cv from "../../assets/lucas-solari.pdf";
+import curriculum from "../../assets/lucas-solari.pdf";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
@@ -58,7 +58,7 @@ const Contact = () => {
           <Link to={"mailto:solarilucas92@gmail.com"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><MdEmail className={styles.icons} /><p className={styles.icons_text}>solarilucas92@gmail.com</p></div></Link>
           <Link to={"https://github.com/Lucaso1992"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaGithub className={styles.icons} /><p className={styles.icons_text}>github.com/Lucaso1992</p></div></Link>
           <Link to={"https://www.linkedin.com/in/lucas-solari/"} target="_blank" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><FaLinkedin className={styles.icons} /><p className={styles.icons_text}>linkedin.com/in/lucas-solari</p></div></Link>
-          <a href={cv} download="lucas-solari.pdf" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><IoMdDownload  className={styles.icons} /><p className={styles.icons_text}>{t('contact.download')}</p></div></a>
+          <a href={curriculum} download="lucas-solari.pdf" className={`${styles.links_div} text-decoration-none`}><div className={styles.icons_conteiner}><IoMdDownload  className={styles.icons} /><p className={styles.icons_text}>{t('contact.download')}</p></div></a>
         </div>
 
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
