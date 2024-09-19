@@ -16,6 +16,7 @@ import { FaPython } from "react-icons/fa6";
 import { SiFlask } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 
 import styles from "./About-me.module.css";
 
@@ -61,8 +62,8 @@ const AboutMe = () => {
             <div className={styles.tech_front_container}>
               <div className={styles.front_container}>
                 <div className="d-flex flex-column">
-                <IoLogoJavascript className={styles.about_icons} />
-                  <p className={styles.icons_text}>JavaScript</p>
+                <SiTypescript className={styles.about_icons} />
+                  <p className={styles.icons_text}>TypeScript</p>
                 </div>
                 <div className="d-flex flex-column">
                   <FaReact className={styles.about_icons} />
