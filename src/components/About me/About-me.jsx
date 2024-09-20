@@ -62,8 +62,8 @@ const AboutMe = () => {
             <div className={styles.tech_front_container}>
               <div className={styles.front_container}>
                 <div className="d-flex flex-column">
-                <SiTypescript className={styles.about_icons} />
-                  <p className={styles.icons_text}>TypeScript</p>
+                <IoLogoJavascript className={styles.about_icons} />
+                  <p className={styles.icons_text}>JavaScript</p>
                 </div>
                 <div className="d-flex flex-column">
                   <FaReact className={styles.about_icons} />
@@ -105,6 +105,11 @@ const AboutMe = () => {
             <h2 className={styles.about_titles_icons}> <strong>Extras</strong></h2>
             <div className={styles.tech_container}>
               <div className="d-flex flex-column">
+                <SiTypescript className={styles.about_icons} />
+                <p className={styles.icons_text}>TypeScript</p>
+              </div>
+
+              <div className="d-flex flex-column">
                 <FaGithub className={styles.about_icons} />
                 <p className={styles.icons_text}>GitHub</p>
               </div>
@@ -112,11 +117,6 @@ const AboutMe = () => {
               <div className="d-flex flex-column">
                 <FaFigma className={styles.about_icons} />
                 <p className={styles.icons_text}>Figma</p>
-              </div>
-
-              <div className="d-flex flex-column">
-                <SiJest className={styles.about_icons} />
-                <p className={styles.icons_text}>Jest</p>
               </div>
 
               <div className="d-flex flex-column">
