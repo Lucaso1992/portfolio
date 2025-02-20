@@ -4,6 +4,7 @@ import img3 from "../../assets/cosmos.webp";
 import img4 from "../../assets/agenda-2.webp";
 import img5 from "../../assets/el-redoble-2.webp";
 import img6 from "../../assets/shop.webp";
+import img7 from "../../assets/logo.png";
 
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -17,6 +18,17 @@ import { SiMysql } from "react-icons/si";
 
 const worksData = [
   {
+    key: 'social',
+    title: "SHOW APP",
+    img: img7,
+    description: "SHOW APP is a social network where you can sign up, log in, create your profile, and share posts with images and text. You can also follow others to see their updates and engage with their content.",
+    description_espanol: "SHOW APP es una red social donde puedes registrarte, iniciar sesión, crear tu perfil y compartir publicaciones con imágenes y texto. Además, puedes seguir a otras personas para ver sus actualizaciones y conectar con su contenido.",
+    containerName: "show",
+    web: "https://show-app-front.vercel.app/",
+    github: "https://github.com/Lucaso1992/proyecto-x",
+    backtext: "",
+    technologies: [<FaReact />, <IoLogoJavascript/>, <FaPython />, <SiFlask />, <SiMysql />]
+  },{
     key: 'ecommerce',
     title: "LUCKY SHOP",
     img: img6,
