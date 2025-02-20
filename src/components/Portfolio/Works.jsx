@@ -4,7 +4,7 @@ import img3 from "../../assets/cosmos.webp";
 import img4 from "../../assets/agenda-2.webp";
 import img5 from "../../assets/el-redoble-2.webp";
 import img6 from "../../assets/shop.webp";
-import img7 from "../../assets/logo.png";
+import img7 from "../../assets/show.png";
 
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
